@@ -72,7 +72,7 @@ for (const file of entries) {
   const virtualId = `\0virtual-entry:${entryAbs}`;
 
   const createConfig = (): InlineConfig => ({
-    base: "https://kone.vc/project/", // critical for absolute .js / .css URLs
+    base: "https://github.com/konevc/chatgpt_miniapp/blob/main/project/", // critical for absolute .js / .css URLs
     plugins: [
       wrapEntryPlugin(virtualId, entryAbs, cssToInclude),
       tailwindcss(),

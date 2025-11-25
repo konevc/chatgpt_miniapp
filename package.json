@@ -2,8 +2,8 @@
   "name": "chatgpt_app_template",
   "version": "1.0.12",
   "description": "",
-  "main": "appbuild/main.js",
-  "module": "appbuild/main.js",
+  "main": "appbuild/demo.js",
+  "module": "appbuild/demo.js",
   "type": "module",
     "scripts": {
     "build": "tsx ./build-all.mts",
