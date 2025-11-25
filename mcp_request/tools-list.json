@@ -1,0 +1,72 @@
+{
+    "input":{
+        "id": 1,
+        "method": "tools/list",
+        "jsonrpc": "2.0"
+    },
+    "output": {
+        "id": 1,
+        "result": {
+        "tools": [
+            {
+            "name": "get_enriched_context",
+            "_meta": {
+                "openai/outputTemplate": "ui://widget/miniapp_example.html",
+                "openai/widgetAccessible": true
+            },
+            "description": "This tool requests user's query to prepare additional context for ChatGPT response. This tool responses with enriched context. ChatGPT **should use** this context in its response.",
+            "inputSchema": {
+                "type": "object",
+                "required": [
+                "user_query",
+                "user_session_id"
+                ],
+                "properties": {
+                "user_query": {
+                    "type": "string",
+                    "description": "User's query to prepare the context."
+                },
+                "user_session_id": {
+                    "type": "string",
+                    "description": "Read \"user_session_id\" from the app local storage. Send empty string if not found."
+                }
+                }
+            },
+            "outputSchema": {
+                "type": "object",
+                "properties": {
+                "required": [
+                    "context_for_chatgpt",
+                    "external_url",
+                    "picture_url",
+                    "mobile_picture_url",
+                    "user_session_id"
+                ],
+                "picture_url": {
+                    "type": "string",
+                    "description": "Picture to display in mini app (desktop)."
+                },
+                "external_url": {
+                    "type": "string",
+                    "description": "External URL to open on the button click."
+                },
+                "user_session_id": {
+                    "type": "string",
+                    "description": "User's session ID to build a related context during the session."
+                },
+                "mobile_picture_url": {
+                    "type": "string",
+                    "description": "Picture to display in mini app (smartphone)."
+                },
+                "context_for_chatgpt": {
+                    "type": "string",
+                    "description": "Enriched context for ChatGPT to use in its response."
+                }
+                }
+            }
+            }
+        ]
+        },
+        "jsonrpc": "2.0"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "input": {
+        "id": 1,
+        "method": "tools/call",
+        "params": {
+        "name": "get_enriched_context",
+        "_meta": {
+            "openai/locale": "en-US",
+            "openai/subject": "v1/xYDkPq8JLOSJWflOa7Px4RGIvVfNj7oMNW6YGI8ssd6wuLoZ62rBJl",
+            "openai/userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+            "openai/userLocation": {
+                "city": "London",
+                "country": "RS",
+                "timezone": "Europe/London"
+            }
+        },
+        "arguments": {
+            "user_query": "What customizable tools are in ChatGPT?",
+            "user_session_id": "218860637996370"
+        }
+        },
+        "jsonrpc": "2.0"
+    },
+    "output": {
+        "id": 1,
+        "result": {
+            "_meta": {
+                "openai/outputTemplate": "ui://widget/miniapp_example.html",
+                "openai/widgetAccessible": true,
+                "openai/resultCanProduceWidget": true,
+                "openai/toolInvocation/invoked": "Ready",
+                "openai/toolInvocation/invoking": "Preparing context..."
+            },
+            "content": [
+                {
+                "text": "{\"picture_url\": \"https://kone.vc/kone-vc.png\", \"external_url\": \"https://kone.vc\", \"user_session_id\": \"218860637996370\", \"mobile_picture_url\": \"https://kone.vc/kone-vc.png\", \"context_for_chatgpt\": \"ChatGPT mini-apps allow you to create a customizable user interface on the fly based on user input. This is a great way to achieve hyper-personalization.\"}",
+                "type": "text"
+                }
+            ],
+            "structuredContent": {
+                "picture_url": "https://kone.vc/kone-vc.png",
+                "external_url": "https://kone.vc",
+                "user_session_id": "218860637996370",
+                "mobile_picture_url": "https://kone.vc/kone-vc.png",
+                "context_for_chatgpt": "ChatGPT mini-apps allow you to create a customizable user interface on the fly based on user input. This is a great way to achieve hyper-personalization."
+            }
+        },
+        "jsonrpc": "2.0"
+    }
+}

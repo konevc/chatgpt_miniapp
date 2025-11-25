@@ -1,0 +1,33 @@
+{
+    "input": {
+        "id": 2,
+        "method": "resources/read",
+        "params": {
+            "uri": "ui://widget/miniapp_example.html"
+        },
+        "jsonrpc": "2.0"
+    },
+  "output": {
+    "id": 2,
+    "result": {
+      "contents": [
+        {
+          "uri": "ui://widget/miniapp_example.html",
+          "text": "\n<!doctype html>\n<html>\n    <head>\n        <meta charset=\"utf-8\" />\n        <link rel=\"stylesheet\" href=\"https://bestdatestravel.com/main.css\">\n    </head>\n    <body>\n        <div id=\"chatgpt-app-root\"></div>\n        <script type=\"module\" src=\"https://bestdatestravel.com/main.js\"></script>\n    </body>\n</html>\n",
+          "_meta": {
+            "openai/widgetCSP": {
+              "connect_domains": [],
+              "resource_domains": [
+                "https://kone.vc"
+              ]
+            },
+            "openai/widgetDescription": "Find a relevant content and picture based on the user's query",
+            "openai/widgetPrefersBorder": true
+          },
+          "mimeType": "text/html+skybridge"
+        }
+      ]
+    },
+    "jsonrpc": "2.0"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "input": {
+      "id": 1,
+      "method": "initialize",
+      "params": {
+        "clientInfo": {
+          "name": "openai-mcp",
+          "version": "1.0.0"
+        },
+        "capabilities": {},
+        "protocolVersion": "2025-03-26"
+      },
+      "jsonrpc": "2.0"
+  },
+  "output": {
+    "id": 1,
+    "result": {
+      "modes": [
+        "chat"
+      ],
+      "scope": "project",
+      "metadata": {
+        "author": "Kone.vc",
+        "created_at": "2025-11-15T10:00:00Z"
+      },
+      "serverInfo": {
+        "name": "example-mcp",
+        "title": "Demo MCP Server",
+        "version": "1.0.0"
+      },
+      "description": "An MCP connector that enriches user's query with new context.",
+      "capabilities": {
+        "tools": {
+          "listChanged": false
+        },
+        "logging": {},
+        "prompts": {
+          "listChanged": false
+        },
+        "resources": {
+          "listChanged": false
+        }
+      },
+      "protocolVersion": "2025-03-26"
+    },
+    "jsonrpc": "2.0"
+  }   
+}
