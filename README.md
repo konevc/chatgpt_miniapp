@@ -21,10 +21,17 @@ You have to run own [MCP server](https://modelcontextprotocol.io/specification/2
 
 Examples on requests and responses are in `mcp_request/`
 
+## Live demo
+
+You can add an MCP connector with the following parameters:
+ URL: https://go.kone.vc/example
+ Authorization: no
+
 
 ## Repository structure
 
 - `src/` – Template source, with utils to manage window.openai
+- `src/mcp` – Example of the MCP server (pgSQL)
 - `mcp_request/` – Examples of requests and responses for MCP server
 - `build-all.mts` – Vite build orchestrator that produces hashed bundles for every widget entrypoint.
 
@@ -60,11 +67,13 @@ pnpm run build
 
 Copy main.js and main.css to your server with **public https:// access**.
 
+**Don't forget** to add this domain in widgetCSP": {"resource_domains": [...]}
+
 
 ## Run app in ChatGPT
 
 1. Enable [developer mode](https://platform.openai.com/docs/guides/developer-mode)
-2. Add your app in Settings > Connectors: specify name of your app and endpoint to your MCP server
+2. Add your app in Settings > Connectors: specify name of your app and endpoint to your MCP server, turn "Authorization" off.
 3. Create a new Project, and add the app via "+" button.
 
 ## Next steps
