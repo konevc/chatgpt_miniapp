@@ -31,7 +31,7 @@ You can add an MCP connector with the following parameters:
 ## Repository structure
 
 - `src/` – Template source, with utils to manage window.openai
-- `src/mcp` – Example of the MCP server (pgSQL)
+- `src/mcp_server` – Example of the MCP server (pgSQL)
 - `mcp_request/` – Examples of requests and responses for MCP server
 - `build-all.mts` – Vite build orchestrator that produces hashed bundles for every widget entrypoint.
 
@@ -79,7 +79,7 @@ Copy main.js and main.css to your server with **public https:// access**.
 ## Next steps
 
 - Create your own components and add them to the gallery: drop new entries into `src/` and they will be picked up automatically by the build script.
-- Expand business-logic on MCP server
+- Expand business-logic on MCP server. Example of the MCP server (developed in pgSQL) in src/mcp_server. You can use it directly inside PostgreSQL database.
 
 
 ## Useful functions in src/openai_utils.jsx
