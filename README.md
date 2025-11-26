@@ -7,9 +7,10 @@ This repository contains ready-to-use UI template to run an own ChatGPT app. It 
 2. Utils to interact with window.openai
 3. Examples of all required MCP requests and responses.
 
-Our website: https://kone.vc
-Email us: dev@kone.vc
-See more tutorials: https://youtube.com/@konevc
+# About Kone VC
+1. Our website: https://kone.vc
+2. Email us: dev@kone.vc
+3. See more tutorials: https://youtube.com/@konevc
 
 ## Requirements
 
