@@ -313,11 +313,11 @@ BEGIN
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="https://kone.vc/project/demo.css">
+        <link rel="stylesheet" href="https://dev.kone.vc/demo/main.css">
     </head>
     <body>
         <div id="chatgpt-app-root"></div>
-        <script type="module" src="https://kone.vc/project/demo.js"></script>
+        <script type="module" src="https://dev.kone.vc/demo/main.js"></script>
     </body>
 </html>
 ',
@@ -325,7 +325,8 @@ BEGIN
                             'openai/widgetCSP', jsonb_build_object(
                                 'connect_domains', jsonb_build_array(),
                                 'resource_domains', jsonb_build_array(
-                                    'https://kone.vc'
+                                    'https://kone.vc',
+                                    'https://dev.kone.vc'
                                 )
                             ),
                             'openai/widgetDescription', 'Find a relevant content and picture based on the user''s query',
