@@ -7,6 +7,10 @@ This repository contains ready-to-use UI template to run an own ChatGPT app. It 
 2. Utils to interact with window.openai
 3. Examples of all required MCP requests and responses.
 
+Our website: https://kone.vc
+Email us: dev@kone.vc
+See more tutorials: https://youtube.com/@konevc
+
 ## Requirements
 
 You have to run own [MCP server](https://modelcontextprotocol.io/specification/2025-06-18), which supports the following methods:
