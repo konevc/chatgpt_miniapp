@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Last updated:** December 26, 2025
+**Last updated:** February 24, 2026
 
 These Terms of Service ("Terms") govern your use of the **Business Helper** application ("App"), provided by **kone.vc** ("we", "us", or "our") and made available through ChatGPT.
 
@@ -70,7 +70,7 @@ We make no guarantees regarding accuracy, completeness, or suitability of the in
 
 If you have questions about these Terms, please contact us at:
 
-**Email:** support@kone.vc  
+**Email:** dev@kone.vc  
 **Website:** https://kone.vc
 
 ---
